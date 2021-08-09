@@ -1,0 +1,45 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="over" [fixedInViewport]="true" opened mode="side">
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Aplikacija
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Aplikacija za vodjenje evidencije
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-button [routerLink]="['/status']">Status</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink]="['/fakultet']">Fakultet</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a mat-button [routerLink]="['/departman']">Departman</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Informacije
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Osnovne informacije o aplikaciji
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a [routerLink]="['/home']" mat-button>Početna</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a [routerLink]="['/author']" mat-button>Autor</a>
+                </mat-nav-list>
+                <mat-nav-list>
+                    <a [routerLink]="['/about']" mat-button>O nama</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>

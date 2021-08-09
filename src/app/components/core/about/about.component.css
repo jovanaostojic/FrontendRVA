@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.leftside,
+.rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .leftside,
+    .rightside {
+        height: 100vh;
+    }
+}
+
+.leftside {
+    background-color: rgb(48, 48, 48);
+}
+
+.rightside {
+    background-color: rgb(48, 48, 48);
+    ;
+}
+
+.zoom {
+    transition: transform 0.5s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.tekst {
+    color: white;
+    flex-direction: column;
+    align-content: center;
+}

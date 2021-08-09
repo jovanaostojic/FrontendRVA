@@ -1,0 +1,8 @@
+img {
+    background-size: contain;
+    width: auto;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 370px;
+}
